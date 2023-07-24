@@ -15,7 +15,7 @@
         <div class="wrapper" id='app'>
 
             @include('admin.layouts.menu')
-
+            
             @include('admin.layouts.sidebar')
 
             <div class="content-wrapper">
