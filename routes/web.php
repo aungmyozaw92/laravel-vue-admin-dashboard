@@ -24,5 +24,10 @@ Route::get('/', function () {
 // });
 
 Route::get('/api/users', [UserController::class, 'index']);
+Route::post('/api/users', [UserController::class, 'store']);
+Route::put('/api/users/{user}', [UserController::class, 'update']);
+Route::patch('/api/users/{user}/change_role', [UserController::class, 'changeRole']);
+Route::delete('/api/users/{user}', [UserController::class, 'destory']);
+Route::delete('/api/users', [UserController::class, 'bulkDelete']);
 
 Route::get('{view}', ApplicationController::class)->where('view','(.*)');
