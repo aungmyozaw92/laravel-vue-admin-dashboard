@@ -72,6 +72,7 @@ return [
     'timezone' => 'UTC',
 
     'date_format' => 'Y-m-d',
+    'datetime_format' => 'Y-m-d h:i A',
 
     /*
     |--------------------------------------------------------------------------
@@ -196,6 +197,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+        App\Providers\FortifyServiceProvider::class,
 
     ],
 
